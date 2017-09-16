@@ -9,14 +9,13 @@ TODO: Add long description of the pod here.
   s.homepage         = "https://github.com/papiguy/multipart-parser/Readme.md"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'papiguy' => 'nitin.khanna@viewglass.com' }
-  s.source           = { :git => 'https://github.com/papiguy/multipart-parser", tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/papiguy/multipart-parser', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.3'
-  s.source_files = '**/*.{c, .h}'
+  s.source_files = '**/*.{c,h}'
   s.public_header_files = '**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
   s.ios.xcconfig = { 
-        'GCC_C_LANGUAGE_STANDARD' => 'c11',
-        'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++14'
+        'GCC_C_LANGUAGE_STANDARD' => 'c11'
         }
 end
