@@ -1,4 +1,4 @@
-CFLAGS += -W -Wall -Wextra -Og
+CFLAGS += -W -Wall -Wextra -O
 SONAME  = libmultipartparser.so
 
 all: $(SONAME)
@@ -9,7 +9,7 @@ $(SONAME): multipartparser.o
 tests: tests.o multipartparser.o
 	$(CXX) -o $@ $^
 
-multipartparser.o: multipartparser.c multipartparser.h
+multipartparser.o: Classes/multipartparser.c Classes/multipartparser.h
 	$(CC) $(CFLAGS) -fPIC -c -o $@ $<
 
 clean:
