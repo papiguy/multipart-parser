@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
   s.homepage         = "https://github.com/papiguy/multipart-parser/Readme.md"
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'papiguy' => 'nitin.khanna@viewglass.com' }
   s.source           = { :git => 'https://github.com/papiguy/multipart-parser', :tag => s.version.to_s }
 
